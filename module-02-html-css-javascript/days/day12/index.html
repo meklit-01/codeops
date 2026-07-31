@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Habesha Eatery | Authentic Ethiopian Food</title>
+  <meta name="description" content="Enjoy authentic Ethiopian cuisine at Habesha Eatery. Reserve your table, explore our menu, and visit us in Addis Ababa.">
+
+</head>
+<body>
+
+  <!-- Skip link for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header>
+    <h1>Habesha Eatery</h1>
+    <p>Authentic Ethiopian Cuisine in the Heart of Addis Ababa</p>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Hero Section -->
+    <section>
+      <h2>Welcome</h2>
+      <img 
+        src="./hero.jfif" 
+        alt="Traditional Ethiopian dishes served on injera with colorful stews" 
+        loading="lazy" 
+        width="100%" 
+      >
+    </section>
+
+    <!-- Reservation Form -->
+    <section>
+      <h2>Reserve a Table</h2>
+
+      <form action="#" method="post">
+        
+        <div>
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div>
+          <label for="tel">Phone Number</label>
+          <input 
+            type="tel" 
+            id="tel" 
+            name="tel" 
+            pattern="09[0-9]{8}" 
+            placeholder="09xxxxxxxx"
+            required
+          >
+        </div>
+
+        <div>
+          <label for="guests">Number of Guests</label>
+          <input 
+            type="number" 
+            id="guests" 
+            name="guests" 
+            min="1" 
+            max="20" 
+            required
+          >
+        </div>
+
+        <div>
+          <label for="date">Reservation Date</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+
+        <button type="submit">Book Now</button>
+      </form>
+    </section>
+
+    <!-- Menu Table -->
+    <section>
+      <h2>Our Menu</h2>
+
+      <table>
+        <caption>Habesha Eatery Menu (Prices in ETB)</caption>
+        <thead>
+          <tr>
+            <th scope="col">Dish</th>
+            <th scope="col">Description</th>
+            <th scope="col">Price (ETB)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Doro Wat</th>
+            <td>Spicy chicken stew served with injera</td>
+            <td>250</td>
+          </tr>
+          <tr>
+            <th scope="row">Shiro</th>
+            <td>Chickpea stew with rich spices</td>
+            <td>150</td>
+          </tr>
+          <tr>
+            <th scope="row">Kitfo</th>
+            <td>Minced raw beef with butter and spices</td>
+            <td>300</td>
+          </tr>
+          <tr>
+            <th scope="row">Vegetarian Combo</th>
+            <td>Assorted vegetable dishes on injera</td>
+            <td>180</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Map Section -->
+    <section>
+      <h2>Find Us</h2>
+
+      <iframe
+        src="https://www.google.com/maps?q=Addis+Ababa&output=embed"
+        width="100%"
+        height="300"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        title="Map showing location of Habesha Eatery in Addis Ababa">
+      </iframe>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Habesha Eatery. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
