@@ -1,0 +1,71 @@
+/* Global reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*Variables */
+:root {
+  --color-bg: #ffffff;
+  --color-text: #222;
+  --color-accent: gold;
+  --color-border: #ddd;
+  --color-hover: #f9f9f9;
+}
+
+/*Base typography */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: var(--color-bg);
+  color: var(--color-text);
+  padding: 20px;
+}
+
+/*Menu Card */
+.menu-card {
+  max-width: 300px;
+  padding: 16px;
+  border: 1px solid var(--color-border);
+  border-top: 6px solid var(--color-accent); /* gold top accent */
+  background: var(--color-bg);
+}
+
+/*Hover effect (pseudo-class) */
+.menu-card:hover {
+  background: var(--color-hover);
+}
+
+/* Typography */
+.dish-name {
+  margin-bottom: 8px;
+}
+
+.description {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+/* Ingredient list with zebra stripes */
+.ingredients {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.ingredients li {
+  padding: 4px;
+}
+
+/* zebra stripe */
+.ingredients li:nth-child(even) {
+  background: var(--color-hover);
+}
+
+/*Price with pseudo-element */
+.price::before {
+  content: "ETB ";
+  font-weight: bold;
+}
