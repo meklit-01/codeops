@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accessible Example</title>
+</head>
+<body>
+
+    <!-- Fix 1: A real button is keyboard accessible and announced as a button by screen readers. -->
+    <button type="button">Submit</button>
+
+
+    <!-- Fix 2: The label tells screen-reader users what information the input requires,
+         and clicking the label also focuses the input. -->
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email">
+
+
+    <!-- Fix 3: Meaningful alt text lets screen-reader users understand what the image shows. -->
+    <img src="injera.jpg"
+         alt="Traditional Ethiopian injera served with different stews">
+
+</body>
+</html>
+
