@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ethiopian Airlines style flight booking layout" />
+    <title>Book Your Flight</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="uper-wraper">
+      <!--  HEADER  -->
+      <header class="header">
+        <div class="logo">
+          <img src="./image/ethiopoian-logo.png" alt="ethiopoianArilanLogo" />
+        </div>
+
+        <nav class="navbar">
+          <a href="#">Book a flight</a>
+          <a href="#">Check-in</a>
+          <a href="#">Loualty</a>
+          <a href="#">Help</a>
+          <button class="menu-btn">☰menu</button>
+        </nav>
+      </header>
+    </div>
+
+    <main class="main">
+      <section class="booking-section">
+        <div class="findBest">
+          <h1>Find the Best Fares</h1>
+          <p>discover the most affordable travel options</p>
+        </div>
+        <div class="booking-card">
+          <!-- Trip type -->
+          <div class="trip-types">
+            <label>
+              <input type="radio" name="trip" checked />
+              Round Trip
+            </label>
+
+            <label>
+              <input type="radio" name="trip" />
+              One-Way
+            </label>
+
+            <label>
+              <input type="radio" name="trip" />
+              Multicity
+            </label>
+          </div>
+
+          <!-- From and To -->
+          <div class="route">
+            <div class="location">
+              <span class="icon">✈</span>
+
+              <div>
+                <small>From</small>
+                <strong>Addis Ababa | ADD</strong>
+              </div>
+            </div>
+
+            <!-- This is positioned in the middle -->
+            <button class="swap">⇄</button>
+
+            <div class="location">
+              <span class="icon">✈</span>
+
+              <div>
+                <small>To</small>
+                <strong>Where are you going?</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Date and passenger row -->
+          <div class="details">
+            <div class="detail-box">
+              <small>Departure</small>
+              <strong>27/08/2026</strong>
+              <i
+                class="far fa-calendar-alt pop-date-stay float-end date-picker-icon"></i>
+            </div>
+
+            <div class="detail-box">
+              <small>Return</small>
+              <strong>03/09/2026</strong>
+              <i
+                class="far fa-calendar-alt pop-date-stay float-end date-picker-icon"></i>
+            </div>
+
+            <div class="detail-box">
+              <small>Passengers</small>
+              <strong>1 Passenger</strong>
+            </div>
+
+            <div class="detail-box">
+              <small>Class</small>
+              <strong>Economy</strong>
+            </div>
+          </div>
+
+          <!-- Bottom options -->
+          <div class="bottom-row">
+            <label>
+              <input type="checkbox" />
+              Book with miles
+            </label>
+
+            <button class="promo">＋ &nbsp; I have promo code</button>
+
+            <button class="search-btn">Search flights</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+     FEATURED PROMOTIONS
+========================= -->
+      <section class="promotions">
+        <div class="promotion-icon">🏷</div>
+
+        <div class="promotion-title">
+          <h2>Featured Promotions</h2>
+        </div>
+
+        <div class="active-deals">
+          <span></span>
+          2 Active Deals
+        </div>
+
+        <a href="#" class="view-deals">
+          View Deals
+          <span>⌄</span>
+        </a>
+      </section>
+
+      <!-- =========================
+     TOP DEALS
+========================= -->
+
+      <section class="deals">
+        <h2>
+          Top deals from
+          <span>Addis Ababa</span>
+        </h2>
+
+        <div class="deal-grid">
+          <!-- CARD 1 -->
+          <article class="deal-card">
+            <div class="deal-image">
+              <img src="./image/duday.jpg" alt="Dubai" />
+            </div>
+
+            <span class="trip-badge"> Round Trip </span>
+
+            <div class="deal-content">
+              <p>Addis Ababa -</p>
+
+              <h3>Dubai</h3>
+
+              <p class="date">Sep 2, 2026 - Sep 9, 2026</p>
+
+              <h3>From ETB 78,155</h3>
+
+              <button>Book Now</button>
+            </div>
+          </article>
+
+          <!-- CARD 2 -->
+          <article class="deal-card">
+            <div class="deal-image">
+              <img src="./image/can (1).jpg" alt="Guangzhou" />
+            </div>
+
+            <span class="trip-badge"> Round Trip </span>
+
+            <div class="deal-content">
+              <p>Addis Ababa -</p>
+
+              <h3>Guangzhou</h3>
+
+              <p class="date">Sep 2, 2026 - Sep 9, 2026</p>
+
+              <h3>From ETB 249,642</h3>
+
+              <button>Book Now</button>
+            </div>
+          </article>
+
+          <!-- CARD 3 -->
+          <article class="deal-card">
+            <div class="deal-image">
+              <img src="./image/537x335_jizan.gif" alt="Rome" />
+            </div>
+
+            <span class="trip-badge"> Round Trip </span>
+
+            <div class="deal-content">
+              <p>Addis Ababa -</p>
+
+              <h3>Rome Fiumicino</h3>
+
+              <p class="date">Sep 2, 2026 - Sep 9, 2026</p>
+
+              <h3>From ETB 130,347</h3>
+
+              <button>Book Now</button>
+            </div>
+          </article>
+
+        
+        </div>
+      </section>
+      <!-- =========================
+     EXPANDING OUR HORIZONS
+========================= -->
+
+      <section class="horizons">
+        <div class="horizons-title">
+          <h2>Expanding Our Horizons</h2>
+
+          <p>Discover more places across our expanding global network.</p>
+        </div>
+
+        <div class="horizon-grid">
+          <!-- JIZAN -->
+          <article class="horizon-card">
+            <img src="./image/537x335_jizan.gif" alt="Jizan Saudi Arabia" />
+
+            <div>
+              <h3>Jizan</h3>
+              <p>Saudi Arabia</p>
+            </div>
+          </article>
+
+          <!-- GENEVA -->
+          <article class="horizon-card">
+            <img src="./image/gva.jpg" alt="Geneva Switzerland" />
+
+            <div>
+              <h3>Geneva</h3>
+              <p>Switzerland</p>
+            </div>
+          </article>
+
+          <!-- SEOUL -->
+          <article class="horizon-card">
+            <img src="./image/seoul.jpg" alt="Seoul South Korea" />
+
+            <div>
+              <h3>Seoul</h3>
+              <p>South Korea</p>
+            </div>
+          </article>
+        </div>
+
+        <button class="discover-btn">Discover more</button>
+      </section>
+
+      <!-- =========================
+     FOOTER
+========================= -->
+
+      <footer class="footer">
+        <div class="footer-column">
+          <h3>Group Companies</h3>
+
+          <a href="#">Ethiopian Cargo & Logistics Service</a>
+          <a href="#">Ethiopian Ground Services</a>
+          <a href="#">In-flight Catering</a>
+          <a href="#">Ethiopian Aviation University</a>
+          <a href="#">Ethiopian Maintenance, Repair, & Overhaul</a>
+          <a href="#">Corporate</a>
+          <a href="#">Ethiopian Skylight Hotel</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Information</h3>
+
+          <a href="#">Baggage Information</a>
+          <a href="#">Travel Tips</a>
+          <a href="#">Before You Fly</a>
+          <a href="#">Travel Guidelines</a>
+          <a href="#">Conditions of Carriage</a>
+          <a href="#">Travel Update</a>
+          <a href="#">Website Terms Of Use</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Help & Support</h3>
+
+          <a href="#">Contact Us</a>
+          <a href="#">FAQs</a>
+          <a href="#">Support & Feedback</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>About us</h3>
+
+          <a href="#">About us</a>
+          <a href="#">Careers</a>
+          <a href="#">Newsroom</a>
+          <a href="#">Awards</a>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

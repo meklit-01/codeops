@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.page {
+  display: grid;
+
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+
+  grid-template-columns: 200px 1fr;
+  min-height: 100vh;
+}
+
+header {
+  grid-area: header;
+  background-color: lightblue;
+  padding: 20px;
+}
+
+aside {
+  grid-area: sidebar;
+  background-color: lightgray;
+  padding: 20px;
+}
+
+main {
+  grid-area: main;
+  padding: 20px;
+}
+
+footer {
+  grid-area: footer;
+  background-color: lightblue;
+  padding: 20px;
+}

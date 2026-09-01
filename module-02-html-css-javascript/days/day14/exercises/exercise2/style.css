@@ -1,0 +1,12 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  flex: 1;
+  padding: 30px;
+  background-color: lightblue;
+  border: 1px solid black;
+}
