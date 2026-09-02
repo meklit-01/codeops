@@ -1,64 +1,50 @@
-import Dish from "./Dish";
-import Card from "./Card";
+import React from 'react'
+import Dish from './Dish'
 
-function Menu() {
-  const menu = [
-    {
-      id: 1,
-      name: "Doro Wat",
-      price: 350,
-      category: "Main",
-      spicy: true,
-    },
-    {
-      id: 2,
-      name: "Tibs",
-      price: 400,
-      category: "Main",
-      spicy: false,
-    },
-    {
-      id: 3,
-      name: "Shiro",
-      price: 200,
-      category: "Main",
-      spicy: true,
-    },
-    {
-      id: 4,
-      name: "Firfir",
-      price: 180,
-      category: "Breakfast",
-      spicy: false,
-    },
-  ];
+const menu = [
+  {id:1, name: "Doro Wet", price: 250, catagory: "main", isSpicy: true },
+  {id:2, name: "Kitfo", price: 350, catagory: "main", isSpicy: true },
+  {id:3, name: "Shiro", price: 150, catagory: "side", isSpicy: false },
+  {id:4, name: "Injera", price: 50, catagory: "side", isSpicy: false },
+  {id:5, name: "Ayib", price: 100, catagory: "side", isSpicy: false },
+  {id:6, name: "Gomen", price: 100, catagory: "side", isSpicy: false },
+  { name: "Tibs", price: 300, catagory: "main", isSpicy: true },
+  { name: "Beyainetu", price: 250, catagory: "main", isSpicy: false }
+]
+let mains=menu.filter((dish)=>dish.catagory=="main")
+let sides=menu.filter((dish)=>dish.catagory=="side")
 
-  const category = "Main";
-
-  const filteredMenu = menu.filter(
-    (dish) => dish.category === category
-  );
-
-  // Early return
-  if (filteredMenu.length === 0) {
-    return <p>No dishes found in this category.</p>;
-  }
-
+function Main() {
   return (
-    <section>
-      <h2>{category} Menu</h2>
-
-      {filteredMenu.map((dish) => (
-        <Card key={dish.id}>
-          <Dish
-            name={dish.name}
-            price={dish.price}
-            spicy={dish.spicy}
-          />
-        </Card>
+    <main className="menu-container">
+        <div className="main">
+        <h1>main dishes</h1>
+      {mains.map((dish, index) => (
+        <Dish
+          key={index}
+          name={dish.name}
+          price={dish.price}
+          catagory={dish.catagory}
+          isSpicy={dish.isSpicy}
+        />
       ))}
-    </section>
-  );
+      </div>
+      <div className="side">
+        <h1>side dishes</h1>
+        {sides.map((item)=>(
+            <Dish
+            key={item.id}
+            name={item.name}
+            price={item.price}
+            catagory={item.catagory}
+            isSpicy={item.isSpicy}
+            />
+            
+        ))}
+        
+      </div>
+    </main>
+  )
 }
 
-export default Menu;
+export default Main

@@ -1,25 +1,28 @@
-import PropTypes from "prop-types";
+import React from 'react'
+import Card from './Card'
+import propTypes from 'prop-types'
 
-function Dish({ name, price, currency = "ETB", spicy = false }) {
+function Dish({ id,name, price, catagory, currency="ETB", isSpicy }) {
   return (
-    <div className="dish">
-      <h3>
-        {name}
-        {spicy === true && <span> • Spicy </span>}
-      </h3>
+        <div className="cards">
+    <Card>
+      <h3>{name}</h3>
+      <p className="price">{price} {currency}</p>
+      <p className="category">{catagory}</p>
+     <span>{isSpicy &&  'Spicy'}</span> 
+    
+    </Card>
+  </div>)
+  propTypes={
+    name:propTypes.string.isRequired,
+    price:propTypes.number.isRequired,
+    catagory:propTypes.string.isRequired,
+    currency:propTypes.string,
+    isSpicy:propTypes.bool,
 
-      <p>
-        {price} {currency}
-      </p>
-    </div>
-  );
+}
 }
 
-Dish.propTypes = {
-  name: PropTypes.string.isRequired,
-  price: PropTypes.number.isRequired,
-  spicy: PropTypes.bool,
-  currency: PropTypes.string,
-};
 
-export default Dish;
+
+export default Dish
