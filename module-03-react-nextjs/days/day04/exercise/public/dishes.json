@@ -1,0 +1,142 @@
+[
+{
+"id": 1,
+"name": "Doro Wat",
+"price": 450,
+"category": "Food",
+"spicy": true
+},
+{
+"id": 2,
+"name": "Tibs",
+"price": 400,
+"category": "Food",
+"spicy": true
+},
+{
+"id": 3,
+"name": "Kitfo",
+"price": 380,
+"category": "Food",
+"spicy": true
+},
+{
+"id": 4,
+"name": "Shiro",
+"price": 180,
+"category": "Food",
+"spicy": true
+},
+{
+"id": 5,
+"name": "Misir Wat",
+"price": 200,
+"category": "Food",
+"spicy": true
+},
+{
+"id": 6,
+"name": "Gomen Besiga",
+"price": 250,
+"category": "Food",
+"spicy": false
+},
+{
+"id": 7,
+"name": "Firfir",
+"price": 180,
+"category": "Food",
+"spicy": true
+},
+{
+"id": 8,
+"name": "Chechebsa",
+"price": 150,
+"category": "Food",
+"spicy": false
+},
+{
+"id": 9,
+"name": "Ful",
+"price": 120,
+"category": "Food",
+"spicy": false
+},
+{
+"id": 10,
+"name": "Dulet",
+"price": 300,
+"category": "Food",
+"spicy": true
+},
+{
+"id": 11,
+"name": "Beyaynetu",
+"price": 350,
+"category": "Food",
+"spicy": true
+},
+{
+"id": 12,
+"name": "Injera with Shiro",
+"price": 200,
+"category": "Food",
+"spicy": true
+},
+{
+"id": 13,
+"name": "Ethiopian Coffee",
+"price": 60,
+"category": "Drink",
+"spicy": false
+},
+{
+"id": 14,
+"name": "Macchiato",
+"price": 80,
+"category": "Drink",
+"spicy": false
+},
+{
+"id": 15,
+"name": "Ethiopian Tea",
+"price": 50,
+"category": "Drink",
+"spicy": false
+},
+{
+"id": 16,
+"name": "Spris Juice",
+"price": 120,
+"category": "Drink",
+"spicy": false
+},
+{
+"id": 17,
+"name": "Mango Juice",
+"price": 100,
+"category": "Drink",
+"spicy": false
+},
+{
+"id": 18,
+"name": "Avocado Juice",
+"price": 120,
+"category": "Drink",
+"spicy": false
+},
+{
+"id": 19,
+"name": "Soft Drink",
+"price": 70,
+"category": "Drink",
+"spicy": false
+},
+{
+"id": 20,
+"name": "Bottled Water",
+"price": 30,
+"category": "Drink",
+"spicy": false
+}
+]
