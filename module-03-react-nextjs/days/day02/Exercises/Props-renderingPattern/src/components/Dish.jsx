@@ -5,13 +5,12 @@ import propTypes from 'prop-types'
 function Dish({ id,name, price, catagory, currency="ETB", isSpicy }) {
   return (
         <div className="cards">
-    <Card>
+    
       <h3>{name}</h3>
       <p className="price">{price} {currency}</p>
       <p className="category">{catagory}</p>
      <span>{isSpicy &&  'Spicy'}</span> 
     
-    </Card>
   </div>)
   propTypes={
     name:propTypes.string.isRequired,

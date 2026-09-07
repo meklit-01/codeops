@@ -1,5 +1,6 @@
 import React from 'react'
 import Dish from './Dish'
+import Card from './Card'
 
 const menu = [
   {id:1, name: "Doro Wet", price: 250, catagory: "main", isSpicy: true },
@@ -20,18 +21,21 @@ function Main() {
         <div className="main">
         <h1>main dishes</h1>
       {mains.map((dish, index) => (
-        <Dish
+        <Card>
+          <Dish
           key={index}
           name={dish.name}
           price={dish.price}
           catagory={dish.catagory}
           isSpicy={dish.isSpicy}
         />
+        </Card>
       ))}
       </div>
       <div className="side">
         <h1>side dishes</h1>
         {sides.map((item)=>(
+          <Card>
             <Dish
             key={item.id}
             name={item.name}
@@ -39,6 +43,8 @@ function Main() {
             catagory={item.catagory}
             isSpicy={item.isSpicy}
             />
+          </Card>
+            
             
         ))}
         

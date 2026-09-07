@@ -9,7 +9,7 @@ function App() {
 
       <Menu
         menu={menu}
-        category="Main"
+        category="Breakfast"
       />
     </main>
   );
