@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #222;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+/* HEADER */
+
+.header {
+  padding: 20px;
+  background: #222;
+  color: white;
+}
+
+.header h1 {
+  margin: 0 0 15px;
+}
+
+.header nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+/* MAIN */
+
+.main-content {
+  padding: 20px 15px;
+  max-width: 1100px;
+  margin: 0 auto;
+ 
+}
+
+/* HOME */
+
+.home {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/* MENU */
+
+.menu-section h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns:
+  repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* DISH CARD */
+
+.dish-card {
+  padding: 55px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.dish-card h3 {
+  padding: 10px;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.dish-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 3px 14px;
+  margin-top: 10px;
+  border: 1px solid #dd5e5e;
+  border-radius: 5px;
+  background: #7b7474;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #3e3c3c;
+}
+
+button:focus,
+a:focus,
+input:focus,
+select:focus {
+  outline: 3px solid #222;
+  outline-offset: 2px;
+}
+
+/* CART */
+
+.cart-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px 40px;
+}
+
+.cart-panel {
+  padding: 20px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* ERROR */
+
+.error-card {
+  padding: 20px;
+  background: white;
+  border: 3px solid #222;
+  border-radius: 8px;
+}
+
+.error-card h2,
+.error-card h3 {
+  margin-top: 0;
+}
+
+/* LOADING */
+
+.loading {
+  padding: 50px;
+  text-align: center;
+}
+
+/* NORMAL PAGES */
+
+.page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background: white;
+  border-radius: 8px;
+}
+
+/* CHECKOUT */
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkout-form label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.checkout-form input,
+.checkout-form select {
+  padding: 12px;
+  border: 1px solid #999;
+  border-radius: 5px;
+}
+
+/* MODAL */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.dish-modal {
+  position: relative;
+
+  width: 100%;
+  max-width: 500px;
+
+  padding: 30px;
+
+  background: white;
+  border-radius: 10px;
+
+  outline: none;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  width: 40px;
+  height: 40px;
+
+  padding: 0;
+
+  font-size: 24px;
+}
+
+/* MOBILE */
+
+@media (min-width: 600px) {
+  .main-content {
+     padding: 30px 20px;
+  }
+
+  .header nav {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .dish-actions {
+    flex-direction: row;
+  }
+
+}
